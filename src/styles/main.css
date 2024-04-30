@@ -1,0 +1,11 @@
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.border{
+    border-bottom: 1px solid #EEEEEE;
+    height: 1vh;
+    width: 100%;
+}
+
