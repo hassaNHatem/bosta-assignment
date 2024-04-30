@@ -8,4 +8,9 @@
     height: 1vh;
     width: 100%;
 }
+@font-face {
+    font-family: cairo;
+    src: url('../../public/Cairo-Regular.ttf');
+}
+
 

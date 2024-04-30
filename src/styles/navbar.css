@@ -43,4 +43,26 @@
 .mobile-display ul li{
     margin-bottom: 1%;
 }
+li{
+    cursor: pointer;
+}
+
+.rightToLeft{
+    transform: scaleX(-1);
+}
+
+.rightToLeft .logo{
+    transform: scaleX(-1);
+}
+.rightToLeft li{
+    transform: scaleX(-1);
+}
+@font-face {
+    font-family: cairo;
+    src: url('../../public/Cairo-Regular.ttf');
+}
+*{
+    font-family:cairo;
+    font-weight: bold;
+}
 
