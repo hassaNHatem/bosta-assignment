@@ -1,0 +1,29 @@
+.details-container{
+    margin-top: 5%;
+    padding: 15px 20px;
+    border: 1px solid #EEEEEE;
+    border-radius: 18px;
+}
+.details-container .top-section{
+    margin-bottom: 3%;
+    border-bottom: 1px solid #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+}
+.steps-info{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-section .progress-container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .top-section {
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+    }
+   
+  }
