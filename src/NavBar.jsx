@@ -49,7 +49,7 @@ function NavBar(){
                     <ul className="last-ul">
                         <li>{lang==='en'?'Track your shipment':'تتبع شحنتك'}</li>
                         <li>{lang==='en'?'Login':'تسجيل دخول'}</li>
-                        <li onClick={handleLanguagechange}> {lang==='en'?'ع':'ENG'}</li>
+                        <li onClick={handleLanguagechange} className="language"> {lang==='en'?'ع':'ENG'}</li>
                     </ul>
 
                     </div>}
@@ -67,7 +67,7 @@ function NavBar(){
                         <li>Contact Sales</li>
                         <li>Track your Shipment</li>
                         <li>Login</li>
-                        <li onClick={handleLanguagechange}>ع</li>
+                        <li  className="language" onClick={handleLanguagechange}>ع</li>
 
                     </ul>
                 </div>}

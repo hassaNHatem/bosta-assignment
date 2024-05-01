@@ -1,9 +1,12 @@
+import { useContext } from "react"
 import ShipmentAdress from "./ShipmentAdress"
 import ShipmentStamp from "./ShipmentStamp"
 import "./styles/bottomsection.css"
+import { MyContext } from "./MyContext"
 
 function BottomSection (){
-    return <div className="bottom-section-container">
+    const {lang} = useContext(MyContext)
+    return <div className={lang==='en'?"bottom-section-container":"bottom-section-container rightToLeft"}>
                 <ShipmentStamp/>
                 <ShipmentAdress/>
             </div>

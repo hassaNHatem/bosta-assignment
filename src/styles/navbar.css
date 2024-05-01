@@ -17,6 +17,7 @@ height: 7vh;
     width: 80%;
 }
 .nav-container ul{
+    color: #6D7284;
     display: flex;
     justify-content: space-between;
     width: 30%;
@@ -36,6 +37,7 @@ height: 7vh;
     
 }
 .mobile-display ul{
+    color: #6D7284;
     padding: 0px;
     width: 100%;
     align-self: center;
@@ -68,4 +70,6 @@ li{
     font-family:cairo;
     font-weight: bold;
 }
-
+.language{
+    color: #F40105;
+}

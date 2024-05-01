@@ -6,13 +6,21 @@ table{
     border-radius: 18px;
     text-align: center;
 }
+.stamp-container h4{
+  color: #232C46;
+}
+tr{
+  color: #9599A6;
+}
 td , th ,tr {
     border-bottom: 1pt solid #FAFAFA;
     border-collapse: collapse;
     padding: 15px 20px;
+    
   }
   tr:first-of-type{
     background-color: #FAFAFA;
+    color: #909CB3 !important;
   }
   tr:last-of-type th , tr:last-of-type td , tr:last-of-type{
     border: none;

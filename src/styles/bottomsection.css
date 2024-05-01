@@ -3,3 +3,24 @@
     justify-content: space-between;
     width: 100%;
 }
+.rightToLeft h5 , .rightToLeft button , .rightToLeft h4 , .rightToLeft .address-details  {
+    transform: scaleX(-1);
+
+}
+.rightToLeft th ,.rightToLeft td{
+    transform: scaleX(-1);
+    text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+    .bottom-section-container{
+        flex-direction: column;
+
+    }
+    .bottom-section-container .stamp-container{
+        width: 100%;
+    }
+    .bottom-section-container .address-container{
+        width: 100%;
+    }
+  }

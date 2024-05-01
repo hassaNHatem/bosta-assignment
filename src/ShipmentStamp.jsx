@@ -1,15 +1,19 @@
+import { useContext } from "react"
 import "./styles/shipmentStamp.css"
+import { MyContext } from "./MyContext";
 
 function ShipmentStamp(){
+    const {lang} = useContext(MyContext)
+
     return <div className="stamp-container">
-                <h4>Shipment Details</h4>
+                <h4>{lang==="en"?'Shipment Details':'تفاصيل الشحنه'}</h4>
                 <div className="stamp-details">
                     <table>
                         <tr>
-                        <th>branch</th>
-                        <th>date</th>
-                        <th>time</th>
-                        <th>details</th>
+                        <th>{lang==='en'?'branch':'الفرع'}</th>
+                        <th>{lang==='en'?'date':'التاريخ'}</th>
+                        <th>{lang==='en'?'time':'الوقت'}</th>
+                        <th>{lang==='en'?'details':'التفاصيل'}</th>
                     </tr>
                     <tr>
                         <td>nasr city</td>

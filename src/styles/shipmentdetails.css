@@ -4,6 +4,15 @@
     border: 1px solid #EEEEEE;
     border-radius: 18px;
 }
+.top-section h4{
+    color: #CBCBCB;
+}
+.top-section h3{
+    color: #373E55;
+}
+.bottom-section h4{
+    color: #2E3750;
+}
 .details-container .top-section{
     margin-bottom: 3%;
     border-bottom: 1px solid #EEEEEE;
