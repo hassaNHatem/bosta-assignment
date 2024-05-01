@@ -8,7 +8,7 @@ function ShipmentAdress(){
     return <div className="address-container">
         <h4>{lang==="en"?'Delivery Address':'عنوان التسليم'}</h4>
         <div className="address-details">
-            some long address as a place holder for a real address when integrated with the backend
+           {lang==='en'?' some long address as a place holder for a real address when integrated with the backend':'امبابه شارع طلعت حرب مدينه العمال بجوار البرنس منزل 17 '}
         </div>
         <div className="report">
             <div className="report-icon">

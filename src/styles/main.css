@@ -13,5 +13,59 @@
     font-family: cairo;
     src: url('../../public/Cairo-Regular.ttf');
 }
+.track-shipment-container{
+    position: absolute;
+    top: 8vh;
+    height: 8rem;
+    right: 17%;
+    border: 1px solid #F6F7F8;
+    padding: 10px 15px;
+    width: 15%;
+    
+}
+.track-shipment-container .search{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
 
+}
+
+.search input{
+    border: 1px solid #E9ECEF;
+    width: 80%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    height: 3rem;
+    outline: none;
+}
+.search span{
+    font-size: 2rem;
+    background-color: #F40105;
+    color: #E9ECEF;
+    height: 3rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 20%;
+    text-align: center;
+    font-weight:bolder;
+}
+.RightToLeft {
+    right: 0%;
+    left: 17%;
+}
+.RightToLeft input::placeholder{
+    text-align: right;
+}
+.RightToLeft{
+    text-align: right;
+}
+
+@media only screen and (max-width: 1150px) {
+    .track-shipment-container{
+        width: 50%;
+        top: 20rem;
+    }
+  }
 

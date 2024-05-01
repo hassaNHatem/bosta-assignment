@@ -4,12 +4,15 @@ import { useState } from 'react';
 import NavBar from './NavBar';
 import ShipmentDetails from './ShipmentDetails';
 import BottomSection from './bottomsection';
+import TrackShipment from './TrackShipment';
 
 function App() {
   const [lang , setLang] = useState("en")
+  const [onTrackShipment , setOnTrackShipment] = useState(false)
+
   return (
     <div>
-  <MyContext.Provider value={{lang , setLang}}>
+  <MyContext.Provider value={{lang , setLang , onTrackShipment , setOnTrackShipment}}>
     <div className='container'>
     <NavBar/>
     </div>
@@ -18,6 +21,7 @@ function App() {
       <ShipmentDetails/>
       <BottomSection/>
     </div>
+    {onTrackShipment&&<TrackShipment/>}
   </MyContext.Provider>
   </div>
   );

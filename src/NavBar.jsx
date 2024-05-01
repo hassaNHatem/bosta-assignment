@@ -7,7 +7,7 @@ function NavBar(){
    const navRef = useRef();
    const [width, setWidth] = useState(window.innerWidth);
    const [displayMobileList , setDisplayMobileList] = useState(false)
-   const {lang , setLang} = useContext(MyContext)
+   const {lang , setLang , setOnTrackShipment} = useContext(MyContext)
     
     const handleLanguagechange = ()=>{
         if(lang==='en'){
@@ -17,8 +17,8 @@ function NavBar(){
         }
        
     }
-    const handleClasstoggle = ()=>{
-        navRef.current.classToggle("rightToLeft")
+    const handleOnTrackShipment = ()=>{
+        setOnTrackShipment((data)=>!data)
     }
     useEffect(() => {
         const handleResize = () => {
@@ -47,7 +47,7 @@ function NavBar(){
                     </ul>
 
                     <ul className="last-ul">
-                        <li>{lang==='en'?'Track your shipment':'تتبع شحنتك'}</li>
+                        <li onClick={handleOnTrackShipment}>{lang==='en'?'Track your shipment':'تتبع شحنتك'}</li>
                         <li>{lang==='en'?'Login':'تسجيل دخول'}</li>
                         <li onClick={handleLanguagechange} className="language"> {lang==='en'?'ع':'ENG'}</li>
                     </ul>
@@ -60,14 +60,13 @@ function NavBar(){
                 </div>
 
                 {displayMobileList&&<div className="mobile-display">
-                <ul className="">
-
-                        <li>main page</li>
-                        <li>Prices</li>
-                        <li>Contact Sales</li>
-                        <li>Track your Shipment</li>
-                        <li>Login</li>
-                        <li  className="language" onClick={handleLanguagechange}>ع</li>
+                <ul>
+                        <li>{lang==='en'?'main page':'الرئيسيه'}</li>
+                        <li>{lang==='en'?'prices':'الاسعار'}</li>
+                        <li>{lang==='en'?'contact sales':'كلم المبيعات'}</li>
+                        <li onClick={handleOnTrackShipment}>{lang==='en'?'Track your shipment':'تتبع شحنتك'}</li>
+                        <li>{lang==='en'?'Login':'تسجيل دخول'}</li>
+                        <li  className="language" onClick={handleLanguagechange}>{lang==='en'?'ع':'ENG'}</li>
 
                     </ul>
                 </div>}

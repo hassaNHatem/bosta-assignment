@@ -4,9 +4,9 @@ import "./styles/shipmentdetails.css"
 import StepProgressBar from "./progress";
 
 function ShipmentDetails(){
-    const {lang , setLang} = useContext(MyContext)
+    const {lang , onTrackShipment} = useContext(MyContext)
     const [err , setErr] = useState()
-    return<div className="details-container">
+    return<div className={onTrackShipment?"details-container track-active":"details-container"}>
             <div className={lang==='en'?"top-section":"top-section rightToLeft"}>
                 <div className="shipment-num">
                     <h4>{lang==="en"?'Shipment No.':'رقم الشحنه'}</h4>

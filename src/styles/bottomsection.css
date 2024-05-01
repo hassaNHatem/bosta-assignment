@@ -7,7 +7,7 @@
     transform: scaleX(-1);
 
 }
-.rightToLeft th ,.rightToLeft td{
+.rightToLeft th ,.rightToLeft td , .rightToLeft .address-details{
     transform: scaleX(-1);
     text-align: right;
 }
