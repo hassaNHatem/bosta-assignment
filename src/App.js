@@ -9,10 +9,11 @@ import TrackShipment from './TrackShipment';
 function App() {
   const [lang , setLang] = useState("en")
   const [onTrackShipment , setOnTrackShipment] = useState(false)
+  const [shipmentDetails , setShipmentDetails] = useState()
 
   return (
     <div>
-  <MyContext.Provider value={{lang , setLang , onTrackShipment , setOnTrackShipment}}>
+  <MyContext.Provider value={{lang , setLang , onTrackShipment , setOnTrackShipment , shipmentDetails , setShipmentDetails}}>
     <div className='container'>
     <NavBar/>
     </div>

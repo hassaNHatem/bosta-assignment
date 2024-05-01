@@ -17,8 +17,10 @@
     position: absolute;
     top: 8vh;
     height: 8rem;
+    background-color: #FFFFFF;
     right: 17%;
     border: 1px solid #F6F7F8;
+    border-radius: 10px;
     padding: 10px 15px;
     width: 15%;
     
@@ -65,7 +67,7 @@
 @media only screen and (max-width: 1150px) {
     .track-shipment-container{
         width: 50%;
-        top: 20rem;
+        top: 19rem;
     }
   }
 
