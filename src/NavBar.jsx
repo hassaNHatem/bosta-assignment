@@ -2,6 +2,7 @@ import { useContext, useEffect, useRef, useState } from "react";
 import "./styles/navbar.css"
 import { IoMenu } from "react-icons/io5";
 import { MyContext } from "./MyContext";
+import logo from './logo.png'
 function NavBar(){
    const navRef = useRef();
    const [width, setWidth] = useState(window.innerWidth);
@@ -36,7 +37,7 @@ function NavBar(){
                 <div ref={navRef}  className={lang==='en'?"nav-flex":"nav-flex rightToLeft"}>
 
                     <div className="logo">
-                        bosta logo here
+                       <img src={logo} style={{width:'100%' , height:'100%'} }/>
                     </div>
                     {width>1150&&<div ref={navRef} className="nav-links">
                     <ul className="middle-ul">
