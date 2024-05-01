@@ -1,0 +1,41 @@
+
+
+table{
+   
+    border-collapse: collapse;
+    border-radius: 18px;
+    text-align: center;
+}
+td , th ,tr {
+    border-bottom: 1pt solid #FAFAFA;
+    border-collapse: collapse;
+    padding: 15px 20px;
+  }
+  tr:first-of-type{
+    background-color: #FAFAFA;
+  }
+  tr:last-of-type th , tr:last-of-type td , tr:last-of-type{
+    border: none;
+  }
+.stamp-details table{
+    width: 100%;
+}
+.stamp-details{
+    width: 50%;
+   border: 1px solid #FAFAFA;
+   border-radius: 10px;
+  }
+ td:last-of-type{
+    width: 45%;
+    
+ }
+
+ tr th , tr td{
+    text-align: left;
+ }
+ .stamp-container{
+  width: 60%;
+ }
+ .stamp-details{
+  width: 100%;
+ }

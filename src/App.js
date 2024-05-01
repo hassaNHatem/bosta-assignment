@@ -3,6 +3,7 @@ import { MyContext } from './MyContext';
 import { useState } from 'react';
 import NavBar from './NavBar';
 import ShipmentDetails from './ShipmentDetails';
+import BottomSection from './bottomsection';
 
 function App() {
   const [lang , setLang] = useState("en")
@@ -15,6 +16,7 @@ function App() {
     <div className='border'></div>
     <div className='container'>
       <ShipmentDetails/>
+      <BottomSection/>
     </div>
   </MyContext.Provider>
   </div>

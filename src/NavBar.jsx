@@ -67,7 +67,7 @@ function NavBar(){
                         <li>Contact Sales</li>
                         <li>Track your Shipment</li>
                         <li>Login</li>
-                        <li>ع</li>
+                        <li onClick={handleLanguagechange}>ع</li>
 
                     </ul>
                 </div>}
