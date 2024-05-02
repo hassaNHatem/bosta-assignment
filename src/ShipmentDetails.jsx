@@ -70,7 +70,7 @@ const dayNamesArabic = ["الاحد" , "الاثنين" , "الثلاثاء" , "
             <div className={lang==='en'?"top-section":"top-section rightToLeft"}>
                 <div className="shipment-num">
                     <h4>{lang==="en"?`Shipment No. ${TrackingNumber}`:`رقم الشحنه ${TrackingNumber}`}</h4>
-                    <h3 className={handleColorChange(CurrentStatus.state)}>{lang==="en"?CurrentStatus.state:handleTranslation(CurrentStatus.state)}</h3>
+                    <h3 className={handleColorChange(CurrentStatus.state)}>{lang==="en"?CurrentStatus.state.replaceAll("_"," "):handleTranslation(CurrentStatus.state)}</h3>
                 </div>
                 <div className="last-update">
                     <h4>{lang==='en'?'Last Update':'اخر تحديث'}</h4>
