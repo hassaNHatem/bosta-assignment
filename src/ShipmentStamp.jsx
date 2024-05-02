@@ -25,6 +25,8 @@ function ShipmentStamp(){
                 return "تم تسليم الشحنه"
             case "CANCELLED":
                 return "تم الغاء الشحنه"
+            case "DELIVERED_TO_SENDER":
+                return "تم تسليم الشحنه الي المرسل"
             
         }
     }
