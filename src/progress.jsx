@@ -32,7 +32,7 @@ function StepProgressBar () {
     return (
       <ProgressBar
        
-        percent={CurrentStatus.state==='CANCELLED'||CurrentStatus.state==='DELIVERED_TO_SENDER'?67:100}
+        percent={CurrentStatus.state==='CANCELLED'?67:100}
         filledBackground={handleColorChange(CurrentStatus.state)}
       >
         <Step transition="scale">
@@ -52,14 +52,14 @@ function StepProgressBar () {
         <Step transition="scale">
           {({ accomplished }) => (
            
-           accomplished&&!(CurrentStatus.state==='CANCELLED'||CurrentStatus.state==='DELIVERED_TO_SENDER')? <FaCheckCircle style={{filter: `grayscale(${accomplished ? 0 : 80}%)` , fontSize:'2rem' , background: 'white',color:handleColorChange(CurrentStatus.state), borderRadius:'50%'} }/>:<FaTruckArrowRight style={{filter: `grayscale(${accomplished ? 0 : 80}%)` , fontSize:'2rem' , color: 'white',background:accomplished?handleColorChange(CurrentStatus.state):'grey', borderRadius:'50%' , border:"1px solid" , padding:'15px'} }/>
+           accomplished&&CurrentStatus.state!=='CANCELLED'? <FaCheckCircle style={{filter: `grayscale(${accomplished ? 0 : 80}%)` , fontSize:'2rem' , background: 'white',color:handleColorChange(CurrentStatus.state), borderRadius:'50%'} }/>:<FaTruckArrowRight style={{filter: `grayscale(${accomplished ? 0 : 80}%)` , fontSize:'2rem' , color: 'white',background:accomplished?handleColorChange(CurrentStatus.state):'grey', borderRadius:'50%' , border:"1px solid" , padding:'15px'} }/>
           
           )}
         </Step>
         <Step transition="scale">
           {({ accomplished }) => (
            
-           accomplished&&!(CurrentStatus.state==='CANCELLED'||CurrentStatus.state==='DELIVERED_TO_SENDER')? <FaCheckCircle style={{filter: `grayscale(${accomplished ? 0 : 80}%)` , fontSize:'2rem' , background: 'white',color:handleColorChange(CurrentStatus.state), borderRadius:'50%'} }/>:<BsFillSaveFill style={{filter: `grayscale(${accomplished ? 0 : 80}%)` , fontSize:'2rem' , color: 'white',background:accomplished?handleColorChange(CurrentStatus.state):'grey', borderRadius:'50%' , border:"1px solid" , padding:'15px'} }/>
+           accomplished&&CurrentStatus.state!=='CANCELLED'? <FaCheckCircle style={{filter: `grayscale(${accomplished ? 0 : 80}%)` , fontSize:'2rem' , background: 'white',color:handleColorChange(CurrentStatus.state), borderRadius:'50%'} }/>:<BsFillSaveFill style={{filter: `grayscale(${accomplished ? 0 : 80}%)` , fontSize:'2rem' , color: 'white',background:accomplished?handleColorChange(CurrentStatus.state):'grey', borderRadius:'50%' , border:"1px solid" , padding:'15px'} }/>
          
           )}
         </Step>
