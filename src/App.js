@@ -19,8 +19,9 @@ function App() {
     </div>
     <div className='border'></div>
     <div className='container'>
-      <ShipmentDetails/>
+     { shipmentDetails&&<><ShipmentDetails/>
       <BottomSection/>
+      </>}
     </div>
     {onTrackShipment&&<TrackShipment/>}
   </MyContext.Provider>
